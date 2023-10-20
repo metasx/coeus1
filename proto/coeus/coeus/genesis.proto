@@ -1,0 +1,12 @@
+syntax = "proto3";
+package coeus.coeus;
+
+import "gogoproto/gogo.proto";
+import "coeus/coeus/params.proto";
+
+option go_package = "coeus/x/coeus/types";
+
+// GenesisState defines the coeus module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

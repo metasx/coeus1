@@ -1,0 +1,7 @@
+syntax = "proto3";
+package coeus.coeus;
+
+option go_package = "coeus/x/coeus/types";
+
+// Msg defines the Msg service.
+service Msg {}
